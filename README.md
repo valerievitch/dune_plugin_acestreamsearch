@@ -1,4 +1,4 @@
-# dune_plugin_acestreamsearch
+# Dune plugin AceStreamSearch
 
 Plugin for Dune media players http://dune-hd.com/
 
