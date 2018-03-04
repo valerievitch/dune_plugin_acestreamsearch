@@ -455,9 +455,9 @@ class AceSearchTv extends AbstractTv
                         PLUGIN_UPDATE_INFO_BLOCK_ACTION_ID,
                     GuiAction::data => array(
                         PluginUpdateInfoBlockActionData::text_above => 
-                            sprintf("%d peers, %d MBits/sec",
+                            sprintf("%d peers, %.2f MBits/sec",
                                 $channel->get_acestream_data('peers'),
-                                $channel->get_acestream_data('speed')
+                                $channel->get_acestream_data('speed')*8/1024
                             ),
                         PluginUpdateInfoBlockActionData::text_color => 19,
                         PluginUpdateInfoBlockActionData::text_halo => TRUE
