@@ -287,6 +287,7 @@ class AceSearchTv extends AbstractTv
         
         if (AceSearchConfig::item('use_local_search_engine', $plugin_cookies)) {
             $ace_proxy = 'http://127.0.0.1:6878';
+            $search_results = $search_results['result'];
         } else {
             $ace_proxy = sprintf('http://%s:%d',
                 AceSearchConfig::item('ace_proxy_ip', $plugin_cookies),
